@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Savita Healing Space | EFT Money & Abundance Coach</title>
+<meta name="description" content="Savita Healing Space — EFT, money mindset, abundance and self-worth coaching. Book a free 30–45 minute Money Clarity Session.">
+<style>
+:root{
+  --cream:#fbf6ef;
+  --rose:#ead7d4;
+  --sage:#dfe6d9;
+  --gold:#b08a52;
+  --ink:#2f2926;
+  --muted:#6f6762;
+  --white:#fffdf9;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:Georgia, "Times New Roman", serif;
+  color:var(--ink);
+  background:var(--cream);
+  line-height:1.6;
+}
+a{text-decoration:none;color:inherit}
+.container{width:min(1100px,92%);margin:auto}
+nav{
+  position:sticky;top:0;z-index:10;
+  background:rgba(251,246,239,.94);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(176,138,82,.18);
+}
+.nav-inner{display:flex;justify-content:space-between;align-items:center;padding:16px 0}
+.logo{font-size:20px;letter-spacing:.4px}
+.nav-links{display:flex;gap:22px;font-family:Arial,sans-serif;font-size:13px}
+.hero{
+  padding:90px 0 75px;
+  background:
+    radial-gradient(circle at 85% 15%, rgba(223,230,217,.8), transparent 28%),
+    radial-gradient(circle at 10% 85%, rgba(234,215,212,.7), transparent 30%);
+}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.eyebrow{
+  text-transform:uppercase;letter-spacing:3px;font:12px Arial,sans-serif;
+  color:var(--gold);font-weight:bold;
+}
+h1{font-size:clamp(44px,7vw,78px);line-height:1.02;margin:16px 0 22px;font-weight:500}
+h1 span{font-style:italic}
+.hero p{font-size:19px;color:var(--muted);max-width:650px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{
+  display:inline-block;padding:14px 24px;border-radius:40px;
+  font:600 13px Arial,sans-serif;letter-spacing:.4px;
+  border:1px solid var(--gold);
+}
+.btn-primary{background:var(--ink);color:white;border-color:var(--ink)}
+.btn-secondary{background:transparent}
+.hero-card{
+  min-height:390px;border-radius:180px 180px 30px 30px;
+  background:linear-gradient(145deg,#fffdf9,#eadfd2);
+  display:flex;align-items:center;justify-content:center;
+  text-align:center;padding:45px;box-shadow:0 22px 60px rgba(72,55,43,.12);
+}
+.hero-card .circle{
+  width:220px;height:220px;border-radius:50%;
+  background:radial-gradient(circle,#fffdf9 0 45%,#e3ddd1 46% 100%);
+  display:flex;align-items:center;justify-content:center;
+  flex-direction:column;box-shadow:0 10px 35px rgba(72,55,43,.12);
+}
+.hero-card strong{font-size:25px;font-weight:500}
+.hero-card small{font:11px Arial,sans-serif;letter-spacing:2px;margin-top:8px;color:var(--gold)}
+section{padding:78px 0}
+.section-title{text-align:center;max-width:700px;margin:0 auto 42px}
+.section-title h2{font-size:42px;font-weight:500;margin:8px 0 10px}
+.section-title p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{
+  background:var(--white);padding:30px;border-radius:22px;
+  border:1px solid rgba(176,138,82,.16);
+}
+.card .icon{font-size:28px}
+.card h3{font-size:23px;font-weight:500;margin:12px 0}
+.card p{color:var(--muted);font-family:Arial,sans-serif;font-size:14px}
+.offer{
+  background:linear-gradient(135deg,#eee6dc,#e2e8dc);
+}
+.offer-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:stretch}
+.offer-card{
+  background:rgba(255,253,249,.88);padding:36px;border-radius:25px;
+  border:1px solid rgba(176,138,82,.18);
+}
+.offer-card.featured{border:2px solid var(--gold)}
+.price{font-size:34px;margin:15px 0;font-weight:500}
+ul{padding-left:20px;color:var(--muted);font-family:Arial,sans-serif;font-size:14px}
+li{margin:9px 0}
+.quote{
+  text-align:center;font-size:30px;font-style:italic;max-width:800px;margin:auto;
+}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.step{text-align:center;padding:25px}
+.number{
+  width:45px;height:45px;border-radius:50%;margin:0 auto 15px;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--rose);font-family:Arial,sans-serif;font-weight:bold;
+}
+.cta{
+  text-align:center;background:var(--ink);color:white;border-radius:30px;
+  padding:65px 25px;
+}
+.cta p{color:#ddd;max-width:600px;margin:10px auto 25px}
+.cta .btn-primary{background:white;color:var(--ink);border-color:white}
+footer{padding:35px 0;text-align:center;color:var(--muted);font:13px Arial,sans-serif}
+.disclaimer{font-size:11px;max-width:720px;margin:15px auto;color:#8a817b}
+@media(max-width:800px){
+  .nav-links{display:none}
+  .hero{padding:60px 0}
+  .hero-grid,.offer-grid{grid-template-columns:1fr}
+  .hero-card{min-height:300px}
+  .cards,.steps{grid-template-columns:1fr}
+  section{padding:55px 0}
+  .section-title h2{font-size:34px}
+  .quote{font-size:24px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container nav-inner">
+    <a class="logo" href="#top">Savita Healing Space 🌸</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#work">How I Help</a>
+      <a href="#sessions">Sessions</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main id="top">
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">EFT • Money • Abundance • Mindset</div>
+      <h1>Change the way you <span>relate</span> to money.</h1>
+      <p>
+        A gentle space to explore money beliefs, self-worth, receiving and emotional patterns —
+        with EFT tapping, reflective coaching and practical next steps.
+      </p>
+      <div class="buttons">
+        <a class="btn btn-primary" href="#contact">BOOK FREE CLARITY SESSION</a>
+        <a class="btn btn-secondary" href="#sessions">VIEW SESSIONS</a>
+      </div>
+      <p style="font:12px Arial,sans-serif;color:#887d75;margin-top:18px">
+        30–45 minute free Money Clarity Session for new clients.
+      </p>
+    </div>
+    <div class="hero-card">
+      <div class="circle">
+        <strong>Savita</strong>
+        <small>HEALING SPACE</small>
+        <div style="margin-top:12px;font:12px Arial,sans-serif;color:#6f6762">Pause • Notice • Choose</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="section-title">
+      <div class="eyebrow">A space for inner work</div>
+      <h2>You don't have to force change.</h2>
+      <p>
+        We begin by noticing what is already happening — the thoughts, emotions and patterns
+        connected with money. From there, we create a more supportive response and pair it with practical action.
+      </p>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="icon">💰</div><h3>Money Patterns</h3><p>Explore fear, scarcity, guilt, comparison, charging and receiving.</p></div>
+      <div class="card"><div class="icon">✨</div><h3>EFT Tapping</h3><p>Use gentle tapping and focused attention as a self-reflection and mindset practice.</p></div>
+      <div class="card"><div class="icon">🦋</div><h3>Self-Worth</h3><p>Build awareness around the beliefs that influence confidence, choices and receiving.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="work" class="offer">
+  <div class="container">
+    <div class="section-title">
+      <div class="eyebrow">My approach</div>
+      <h2>The S.A.R. Method</h2>
+      <p>A simple framework for turning awareness into a supportive next step.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="number">S</div><h3>Spot</h3><p>Notice the money thought, emotion or pattern.</p></div>
+      <div class="step"><div class="number">A</div><h3>Address</h3><p>Use EFT to gently work with what comes up.</p></div>
+      <div class="step"><div class="number">R</div><h3>Respond</h3><p>Choose a helpful reframe and one practical action.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="sessions">
+  <div class="container">
+    <div class="section-title">
+      <div class="eyebrow">Work with me</div>
+      <h2>Choose your next step.</h2>
+      <p>Start with clarity. Decide from there.</p>
+    </div>
+    <div class="offer-grid">
+      <div class="offer-card featured">
+        <div class="eyebrow">For new clients</div>
+        <h3>Money Clarity Session</h3>
+        <div class="price">FREE</div>
+        <ul>
+          <li>30–45 minute private conversation</li>
+          <li>Explore your current money concerns</li>
+          <li>Identify recurring thoughts and patterns</li>
+          <li>Clarify what you want to work on</li>
+          <li>No pressure to book a paid session</li>
+        </ul>
+        <a class="btn btn-primary" href="#contact">BOOK MY FREE SESSION</a>
+      </div>
+
+      <div class="offer-card">
+        <div class="eyebrow">1:1 private coaching</div>
+        <h3>Money Mindset & EFT Session</h3>
+        <div class="price">₹1,499</div>
+        <ul>
+          <li>60-minute private session</li>
+          <li>Money beliefs and emotional patterns</li>
+          <li>Self-worth and receiving</li>
+          <li>Guided EFT tapping practice</li>
+          <li>Supportive reframe + practical next step</li>
+        </ul>
+        <a class="btn btn-secondary" href="#contact">ASK ABOUT A SESSION</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="quote">
+      “A new relationship with money can begin with one honest conversation.”
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="cta">
+      <div class="eyebrow" style="color:#d8bb8c">READY WHEN YOU ARE</div>
+      <h2 style="font-size:42px;font-weight:500;margin:10px 0">Start with a conversation.</h2>
+      <p>
+        If you're ready to understand what's happening beneath your money patterns,
+        begin with the free 30–45 minute Money Clarity Session.
+      </p>
+      <!-- WhatsApp booking number: +91 82958 38536 -->
+      <a class="btn btn-primary" href="https://wa.me/918295838536?text=Hi%20Savita%2C%20I%27d%20like%20to%20book%20the%20free%20Money%20Clarity%20Session." target="_blank">
+        WHATSAPP ME
+      </a>
+      <p style="font-size:13px;margin-top:18px;color:#cfc8c3">
+        Instagram: @savita.abundancecoach
+      </p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <strong>Savita Healing Space 🌸</strong><br>
+  EFT • Money • Abundance • Mindset
+  <div class="disclaimer">
+    EFT and related practices are presented as wellness, self-reflection and mindset tools.
+    They are not a guarantee of financial results and are not a substitute for medical, psychological or financial advice.
+  </div>
+  © 2026 Savita Healing Space
+</footer>
+
+</body>
+</html>
